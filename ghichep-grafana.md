@@ -15,13 +15,18 @@ echo "deb https://packagecloud.io/grafana/stable/debian/ wheezy main" >> /etc/ap
 curl https://packagecloud.io/gpg.key | sudo apt-key add -
 
 sudo apt-get update
-sudo apt-get install grafana
+sudo apt-get -y install grafana
 ```
 
 - Khởi động grafana
 
 ```sh
 sudo service grafana-server start
+```
+
+- Khởi động cùng OS
+```sh
+sudo update-rc.d grafana-server defaults 95 10
 ```
 
 ##### Cấu hình cho zabbix
