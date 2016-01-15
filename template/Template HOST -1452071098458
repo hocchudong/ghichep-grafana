@@ -1,0 +1,1310 @@
+{
+  "id": 7,
+  "title": "Template HOST",
+  "originalTitle": "Template HOST",
+  "tags": [],
+  "style": "dark",
+  "timezone": "browser",
+  "editable": true,
+  "hideControls": false,
+  "sharedCrosshair": false,
+  "rows": [
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "25px",
+      "panels": [
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "s",
+          "id": 1,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "System uptime",
+              "application": {
+                "name": "General"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$groups",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "System uptime"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "System uptime",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": false,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "percent",
+          "height": "",
+          "id": 2,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "CPU system time",
+              "application": {
+                "name": "CPU"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "CPU system time"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "CPU system time",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(50, 172, 45, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "bytes",
+          "height": "",
+          "id": 3,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "DISK Used /",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Used disk space on /"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "DISK Used /",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(50, 172, 45, 0.97)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(245, 54, 54, 0.9)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "bytes",
+          "height": "",
+          "id": 4,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "DISK Free /",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Free disk space on /"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "DISK Free /",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "bytes",
+          "height": "",
+          "id": 5,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "RAM free",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "RAM free"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "RAM free",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        },
+        {
+          "cacheTimeout": null,
+          "colorBackground": false,
+          "colorValue": true,
+          "colors": [
+            "rgba(245, 54, 54, 0.9)",
+            "rgba(237, 129, 40, 0.89)",
+            "rgba(50, 172, 45, 0.97)"
+          ],
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "format": "bytes",
+          "height": "",
+          "id": 6,
+          "interval": null,
+          "isNew": true,
+          "links": [],
+          "maxDataPoints": 100,
+          "nullPointMode": "connected",
+          "nullText": null,
+          "postfix": "",
+          "postfixFontSize": "50%",
+          "prefix": "",
+          "prefixFontSize": "50%",
+          "span": 2,
+          "sparkline": {
+            "fillColor": "rgba(31, 118, 189, 0.18)",
+            "full": false,
+            "lineColor": "rgb(31, 120, 193)",
+            "show": false
+          },
+          "targets": [
+            {
+              "alias": "RAM Total",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Total memory"
+              },
+              "refId": "A"
+            }
+          ],
+          "thresholds": "",
+          "title": "RAM Total",
+          "type": "singlestat",
+          "valueFontSize": "50%",
+          "valueMaps": [
+            {
+              "op": "=",
+              "text": "N/A",
+              "value": "null"
+            }
+          ],
+          "valueName": "avg"
+        }
+      ],
+      "title": "Row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": 253,
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "vnpt-si-cloud-zabbix",
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "height": "",
+          "id": 7,
+          "isNew": true,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": true,
+            "min": true,
+            "rightSide": false,
+            "show": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Incoming network traffic on em1",
+              "application": {
+                "name": "Network interfaces"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Incoming network traffic on em1"
+              },
+              "refId": "B"
+            },
+            {
+              "alias": "Outgoing network traffic on em1",
+              "application": {
+                "name": "Network interfaces"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Outgoing network traffic on em1"
+              },
+              "refId": "A"
+            },
+            {
+              "alias": "Incoming network traffic on em2",
+              "application": {
+                "name": "Network interfaces"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Incoming network traffic on em2"
+              },
+              "refId": "C"
+            },
+            {
+              "alias": "Outgoing network traffic on em2",
+              "application": {
+                "name": "Network interfaces"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Outgoing network traffic on em2"
+              },
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "Network IN-OUT",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "Bps",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "vnpt-si-cloud-zabbix",
+          "decimals": 2,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)",
+            "thresholdLine": false
+          },
+          "height": "",
+          "id": 8,
+          "isNew": true,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "hideEmpty": false,
+            "hideZero": false,
+            "max": true,
+            "min": true,
+            "rightSide": false,
+            "show": true,
+            "total": true,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Total memory",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Total memory"
+              },
+              "refId": "A"
+            },
+            {
+              "alias": "RAM used",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "RAM used"
+              },
+              "refId": "B"
+            },
+            {
+              "alias": "RAM free",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "RAM free"
+              },
+              "refId": "C"
+            },
+            {
+              "alias": "RAM cached",
+              "application": {
+                "name": "Memory"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "RAM cached"
+              },
+              "refId": "D"
+            },
+            {
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "refId": "E"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "RAM",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "bytes",
+            "short"
+          ]
+        }
+      ],
+      "title": "New row"
+    },
+    {
+      "collapse": false,
+      "editable": true,
+      "height": "250px",
+      "panels": [
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "vnpt-si-cloud-zabbix",
+          "decimals": 2,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 9,
+          "isNew": true,
+          "legend": {
+            "alignAsTable": true,
+            "avg": true,
+            "current": true,
+            "max": true,
+            "min": true,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "CPU idle time",
+              "application": {
+                "name": "CPU"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "CPU idle time"
+              },
+              "refId": "A"
+            },
+            {
+              "alias": "CPU user time",
+              "application": {
+                "name": "CPU"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "CPU user time"
+              },
+              "refId": "B"
+            },
+            {
+              "alias": "CPU system time",
+              "application": {
+                "name": "CPU"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "CPU system time"
+              },
+              "refId": "C"
+            },
+            {
+              "alias": "CPU iowait time",
+              "application": {
+                "name": "CPU"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "CPU iowait time"
+              },
+              "refId": "D"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "CPU",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "percent",
+            "short"
+          ]
+        },
+        {
+          "aliasColors": {},
+          "bars": false,
+          "datasource": "vnpt-si-cloud-zabbix",
+          "decimals": 2,
+          "editable": true,
+          "error": false,
+          "fill": 1,
+          "grid": {
+            "leftLogBase": 1,
+            "leftMax": null,
+            "leftMin": null,
+            "rightLogBase": 1,
+            "rightMax": null,
+            "rightMin": null,
+            "threshold1": null,
+            "threshold1Color": "rgba(216, 200, 27, 0.27)",
+            "threshold2": null,
+            "threshold2Color": "rgba(234, 112, 112, 0.22)"
+          },
+          "id": 10,
+          "isNew": true,
+          "legend": {
+            "alignAsTable": true,
+            "avg": false,
+            "current": true,
+            "max": false,
+            "min": false,
+            "show": true,
+            "total": false,
+            "values": true
+          },
+          "lines": true,
+          "linewidth": 2,
+          "links": [],
+          "nullPointMode": "connected",
+          "percentage": false,
+          "pointradius": 5,
+          "points": false,
+          "renderer": "flot",
+          "seriesOverrides": [],
+          "span": 6,
+          "stack": false,
+          "steppedLine": false,
+          "targets": [
+            {
+              "alias": "Free disk space on /",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Free disk space on /"
+              },
+              "refId": "B"
+            },
+            {
+              "alias": "Used disk space on /",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Used disk space on /"
+              },
+              "refId": "A"
+            },
+            {
+              "alias": "Free disk space on /var/lib/ceph/osd/ceph-3",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Free disk space on /var/lib/ceph/osd/ceph-3"
+              },
+              "refId": "C"
+            },
+            {
+              "alias": "Free disk space on /var/lib/ceph/osd/ceph-7",
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "item": {
+                "name": "Free disk space on /var/lib/ceph/osd/ceph-7"
+              },
+              "refId": "D"
+            },
+            {
+              "application": {
+                "name": "Filesystems"
+              },
+              "downsampleFunction": {
+                "name": "avg",
+                "value": "avg"
+              },
+              "errors": {},
+              "group": {
+                "name": "$group",
+                "templated": true
+              },
+              "host": {
+                "name": "$host",
+                "templated": true
+              },
+              "refId": "E"
+            }
+          ],
+          "timeFrom": null,
+          "timeShift": null,
+          "title": "DISK",
+          "tooltip": {
+            "shared": true,
+            "value_type": "cumulative"
+          },
+          "type": "graph",
+          "x-axis": true,
+          "y-axis": true,
+          "y_formats": [
+            "bytes",
+            "short"
+          ]
+        }
+      ],
+      "title": "New row"
+    }
+  ],
+  "time": {
+    "from": "now-1h",
+    "to": "now"
+  },
+  "timepicker": {
+    "now": true,
+    "refresh_intervals": [
+      "5s",
+      "10s",
+      "30s",
+      "1m",
+      "5m",
+      "15m",
+      "30m",
+      "1h",
+      "2h",
+      "1d"
+    ],
+    "time_options": [
+      "5m",
+      "15m",
+      "1h",
+      "6h",
+      "12h",
+      "24h",
+      "2d",
+      "7d",
+      "30d"
+    ]
+  },
+  "templating": {
+    "list": [
+      {
+        "allFormat": "glob",
+        "current": {
+          "tags": [],
+          "text": "All",
+          "value": "{Discovered hosts,HAProxy,Hypervisors,Linux servers,OpenStack,Storage,Switch,Templates,Virtual machines,ZBX-CISCO-TEMPLATES,Zabbix servers}"
+        },
+        "datasource": "vnpt-si-cloud-zabbix",
+        "includeAll": true,
+        "multi": false,
+        "multiFormat": "glob",
+        "name": "group",
+        "options": [
+          {
+            "selected": true,
+            "text": "All",
+            "value": "{Discovered hosts,HAProxy,Hypervisors,Linux servers,OpenStack,Storage,Switch,Templates,Virtual machines,ZBX-CISCO-TEMPLATES,Zabbix servers}"
+          },
+          {
+            "selected": false,
+            "text": "Discovered hosts",
+            "value": "Discovered hosts"
+          },
+          {
+            "selected": false,
+            "text": "HAProxy",
+            "value": "HAProxy"
+          },
+          {
+            "selected": false,
+            "text": "Hypervisors",
+            "value": "Hypervisors"
+          },
+          {
+            "selected": false,
+            "text": "Linux servers",
+            "value": "Linux servers"
+          },
+          {
+            "selected": false,
+            "text": "OpenStack",
+            "value": "OpenStack"
+          },
+          {
+            "selected": false,
+            "text": "Storage",
+            "value": "Storage"
+          },
+          {
+            "selected": false,
+            "text": "Switch",
+            "value": "Switch"
+          },
+          {
+            "selected": false,
+            "text": "Templates",
+            "value": "Templates"
+          },
+          {
+            "selected": false,
+            "text": "Virtual machines",
+            "value": "Virtual machines"
+          },
+          {
+            "selected": false,
+            "text": "ZBX-CISCO-TEMPLATES",
+            "value": "ZBX-CISCO-TEMPLATES"
+          },
+          {
+            "selected": false,
+            "text": "Zabbix servers",
+            "value": "Zabbix servers"
+          }
+        ],
+        "query": "*",
+        "refresh": false,
+        "regex": "",
+        "type": "query"
+      },
+      {
+        "allFormat": "glob",
+        "current": {
+          "tags": [],
+          "text": "CEPH5",
+          "value": "CEPH5"
+        },
+        "datasource": "vnpt-si-cloud-zabbix",
+        "includeAll": false,
+        "multi": false,
+        "multiFormat": "glob",
+        "name": "host",
+        "options": [
+          {
+            "selected": false,
+            "text": "CEPH1",
+            "value": "CEPH1"
+          },
+          {
+            "selected": false,
+            "text": "CEPH2",
+            "value": "CEPH2"
+          },
+          {
+            "selected": false,
+            "text": "CEPH3",
+            "value": "CEPH3"
+          },
+          {
+            "selected": false,
+            "text": "CEPH4",
+            "value": "CEPH4"
+          },
+          {
+            "selected": true,
+            "text": "CEPH5",
+            "value": "CEPH5"
+          },
+          {
+            "selected": false,
+            "text": "Cisco 2960s Tang 15",
+            "value": "Cisco 2960s Tang 15"
+          },
+          {
+            "selected": false,
+            "text": "Compute1",
+            "value": "Compute1"
+          },
+          {
+            "selected": false,
+            "text": "Compute2",
+            "value": "Compute2"
+          },
+          {
+            "selected": false,
+            "text": "Compute3",
+            "value": "Compute3"
+          },
+          {
+            "selected": false,
+            "text": "Controller1",
+            "value": "Controller1"
+          },
+          {
+            "selected": false,
+            "text": "Controller2",
+            "value": "Controller2"
+          },
+          {
+            "selected": false,
+            "text": "HAProxy1",
+            "value": "HAProxy1"
+          },
+          {
+            "selected": false,
+            "text": "HAProxy2",
+            "value": "HAProxy2"
+          },
+          {
+            "selected": false,
+            "text": "Zabbix server",
+            "value": "Zabbix server"
+          }
+        ],
+        "query": "$group.*",
+        "refresh": false,
+        "regex": "",
+        "type": "query"
+      }
+    ]
+  },
+  "annotations": {
+    "list": []
+  },
+  "refresh": "5s",
+  "schemaVersion": 8,
+  "version": 42,
+  "links": []
+}

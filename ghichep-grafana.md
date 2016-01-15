@@ -84,5 +84,13 @@ service grafana-server restart
 ```
 
 
-
 #### Phía client 
+
+##### Các bước add trên Zabbix
+
+
+![plugincpu](/images/grafana-zabbix1.png)
+
+![plugincpu](/images/grafana-zabbix2.png)
+
+![plugincpu](/images/grafana-zabbix3.png)
