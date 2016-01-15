@@ -93,4 +93,15 @@ service grafana-server restart
 
 ![plugincpu](/images/grafana-zabbix2.png)
 
+```sh
+5: Khai báo đường dẫn như sau
+http://IP_CUA_MAY_CHU_ZABBIX/zabbix/api_jsonrpc.php
+
+6: Chọn proxy
+
+7: Tài khoản của Zabbix 
+
+8: Mật khẩu của Zabbix
+```
+
 ![plugincpu](/images/grafana-zabbix3.png)
