@@ -5,6 +5,7 @@
 ######################################################################
 #!/bin/bash
 
+apt-get update 
 
 echo "deb https://packagecloud.io/grafana/stable/debian/ wheezy main" >> /etc/apt/sources.list
 curl https://packagecloud.io/gpg.key | sudo apt-key add -
@@ -18,3 +19,4 @@ sudo service grafana-server start
 echo "Cho phep grafana khoi dong cung OS"
 sleep 3
 sudo update-rc.d grafana-server defaults 95 10
+
