@@ -1,6 +1,7 @@
-﻿#### Các ghi chép về Grafana
+﻿# Các ghi chép về Grafana
 
-### Cài đặt grafana
+# 1. Cài đặt và cấu hình grafana
+## 1. Cài đặt grafana
 
 - Môi trường cài đặt
 ```sh
@@ -29,7 +30,10 @@ sudo service grafana-server start
 sudo update-rc.d grafana-server defaults 95 10
 ```
 
-##### Cấu hình cho zabbix
+# 2. Các cấu hình đối với Graylog
+***
+
+## 2.1. Cấu hình cho zabbix
 
 ```sh
 Tham khảo: https://github.com/alexanderzobnin/grafana-zabbix
