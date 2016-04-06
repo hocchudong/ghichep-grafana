@@ -1,5 +1,16 @@
 ﻿# Các ghi chép về Grafana
 
+***
+## Cài đặt grafana 3.x
+***
+- Cài đặt grafana 3.x
+```sh
+wget https://grafanarel.s3.amazonaws.com/builds/grafana_3.0.0-beta11459429091_amd64.deb
+sudo apt-get install -y adduser libfontconfig
+sudo dpkg -i grafana_3.0.0-beta11459429091_amd64.deb
+```
+
+***
 # 1. Cài đặt và cấu hình grafana
 ## 1. Cài đặt grafana
 
