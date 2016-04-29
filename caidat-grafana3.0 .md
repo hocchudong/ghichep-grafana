@@ -36,28 +36,29 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 
 Mục 1 : **Gerenal**
 ```sh
-1: Title của biểu **đồ**
+1: Title của biểu đồ
 2: Kích thước chiều ngang của biểu đồ
 3: Kích thước chiều dài của biểu đồ
 4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác
 ```
 ![graphite](/images/Gra8.png)
-```sh 
+
 Mục 2: **Metrics**
+```sh 
 1: Chọn host 
 2,3 : Chọn thông số muốn hiển thị của host
-4: Dùng function *alias* để đặt tên khác ở ô 5
+4: Dùng function `alias` để đặt tên khác ở ô 5
 ```
 ![graphite](/images/Gra9.png)
-```sh
+
 Thay thế legend name với tên ngắn gọn là **FREE**
-```
+
 ![graphite](/images/Gra10.png)
 ```sh
 Tạo thêm một query với mục đích hiển thị tổng số dung lượng RAM đã sử dụng.
-3: Chọn thống số là *memory-buffered*
-4: Sử dụng function tính tổng là *sumSeries()*, ở trong ta điền thông số *memory-cached, memory-used*, hàm *sumSeries()* sẽ tính tổng 3 thông số
-là memory-buffer, cached và used, hiển thị tên biểu đồ với tên là **USED**
+3: Chọn thống số là `memory-buffered`
+4: Sử dụng function tính tổng là `sumSeries()`, ở trong ta điền thông số `memory-cached, memory-used`, hàm `sumSeries()` sẽ tính tổng 3 thông số
+là memory-buffer, cached và used, hiển thị tên biểu đồ với tên là `USED`
 ```
 ```sh
 Cách lấy tên đầy đủ cho thống số ở mục 4:
