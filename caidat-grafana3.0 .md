@@ -1,5 +1,5 @@
 ##Ghi chép cài đặt và sử dụng Grafana 3.0 ( phiên bản Beta)
-- Cài đặt **grafana** 3.x
+- Cài đặt grafana 3.x
 ```sh
 wget https://grafanarel.s3.amazonaws.com/builds/grafana_3.0.0-beta11459429091_amd64.deb
 sudo apt-get install -y adduser libfontconfig
@@ -33,13 +33,13 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 ```
 ####1.1 Pie Chart
 ![graphite](/images/Gra6.png)
-```sh
+
 Mục 1 : **Gerenal**
 1: Title của biểu đồ
 2: Kích thước chiều ngang của biểu đồ
 3: Kích thước chiều dài của biểu đồ
 4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác
-```
+
 ![graphite](/images/Gra8.png)
 ```sh 
 Mục 2: **Metrics**
