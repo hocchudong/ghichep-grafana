@@ -1,12 +1,12 @@
 ##Ghi chép cài đặt và sử dụng Grafana 3.0 ( phiên bản Beta)
-- Cài đặt grafana 3.x
+- Cài đặt **grafana** 3.x
 ```sh
 wget https://grafanarel.s3.amazonaws.com/builds/grafana_3.0.0-beta11459429091_amd64.deb
 sudo apt-get install -y adduser libfontconfig
 sudo dpkg -i grafana_3.0.0-beta11459429091_amd64.deb
 ```
 
-***
+
 ###Mô hình logic Grafana kết hợp Graphite và Collectd
 <img src="http://i.imgur.com/5GWXWLB.png">
 
