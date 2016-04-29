@@ -45,9 +45,9 @@ Mục 1 : **Gerenal**
 
 Mục 2: **Metrics**
 
-1: Chọn host 
-2,3 : Chọn thông số muốn hiển thị của host
-4: Dùng function `alias` để đặt tên khác ở ô 5
+<ul>1: Chọn host</ul>
+<ul>2,3 : Chọn thông số muốn hiển thị của host</ul>
+<ul>4: Dùng function `alias` để đặt tên khác ở ô 5</ul>
 
 ![graphite](/images/Gra9.png)
 
