@@ -35,11 +35,12 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 ![graphite](/images/Gra6.png)
 
 Mục 1 : **Gerenal**
-1: Title của biểu đồ
+```sh
+1: Title của biểu **đồ**
 2: Kích thước chiều ngang của biểu đồ
 3: Kích thước chiều dài của biểu đồ
 4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác
-
+```
 ![graphite](/images/Gra8.png)
 ```sh 
 Mục 2: **Metrics**
