@@ -44,11 +44,11 @@ Mục 1 : **Gerenal**
 ![graphite](/images/Gra8.png)
 
 Mục 2: **Metrics**
-```sh 
+
 1: Chọn host 
 2,3 : Chọn thông số muốn hiển thị của host
 4: Dùng function `alias` để đặt tên khác ở ô 5
-```
+
 ![graphite](/images/Gra9.png)
 
 Thay thế legend name với tên ngắn gọn là **FREE**
