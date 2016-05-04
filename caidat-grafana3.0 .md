@@ -83,15 +83,12 @@ Mục 1 và 2 cách các thông số vẫn giống vẫn kiểu Pie Chart ( chú
 
 Mục 3: **Axes**
 
-Mục này để điều chỉnh các thông số ở trục X và Y
-
-Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái.
+<ul>Mục này để điều chỉnh các thông số ở trục X và Y</ul>
+<ul>Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái.</ul>
 
 Mục 4: **Legend**
-
-Mục này để tùy chỉnh các thông số liên quan đến `lengend`
-
-Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged
+<ul>Mục này để tùy chỉnh các thông số liên quan đến `lengend`</ul>
+<ul>Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged</ul>
 
 Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phan sau dấu ","
 
