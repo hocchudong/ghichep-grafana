@@ -9,7 +9,8 @@
 ###1. Mô hình logic Grafana kết hợp Graphite và Collectd
 <img src="http://i.imgur.com/5GWXWLB.png">
 
-<a name="dashboard"> </a> ###2. Hướng dẫn tạo Dashboard giám sát các host trên Grafana 3.0
+<a name="dashboard"> </a> 
+###2. Hướng dẫn tạo Dashboard giám sát các host trên Grafana 3.0
 Kịch bản : Đã có sẵn các host được giám sát bởi Graphite và Collectd.
 ####Các bước cài đặt
 Add Graphite cho Grafana
