@@ -1,12 +1,10 @@
 ##Ghi chép cài đặt và sử dụng Grafana 3.0 ( phiên bản Beta)
 - Cài đặt grafana 3.x
-
+```sh
 wget https://grafanarel.s3.amazonaws.com/builds/grafana_3.0.0-beta11459429091_amd64.deb
-
 sudo apt-get install -y adduser libfontconfig
-
 sudo dpkg -i grafana_3.0.0-beta11459429091_amd64.deb
-
+```
 
 
 ###Mô hình logic Grafana kết hợp Graphite và Collectd
@@ -31,11 +29,11 @@ Add Graphite cho Grafana
 
 Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 
-1.1 Pie Chart : Thích hợp để thể hiện các dạng như RAM, Disk Usage.
+ - 1.1 Pie Chart : Thích hợp để thể hiện các dạng như RAM, Disk Usage.
 
-1.2 Graphp : Thích hợp để thể hiện các dạng như Network Traffic, CPU Utilization.
+ - 1.2 Graphp : Thích hợp để thể hiện các dạng như Network Traffic, CPU Utilization.
 
-1.3 Singlestat : Thể hiện 1 số liệu cụ thể như System Uptime, RAM, Disk Total
+ - 1.3 Singlestat : Thể hiện 1 số liệu cụ thể như System Uptime, RAM, Disk Total
 
 ####1.1 Pie Chart
 ![graphite](/images/Gra6.png)
@@ -63,9 +61,9 @@ Thay thế legend name với tên ngắn gọn là **FREE**
 
 Tạo thêm một query với mục đích hiển thị tổng số dung lượng RAM đã sử dụng.
 
-3: Chọn thống số là `memory-buffered`
+ - 3: Chọn thống số là `memory-buffered`
 
-4: Sử dụng function tính tổng là `sumSeries()`, ở trong ta điền thông số `memory-cached, memory-used`, hàm `sumSeries()` sẽ tính tổng 3 thông số
+ - 4: Sử dụng function tính tổng là `sumSeries()`, ở trong ta điền thông số `memory-cached, memory-used`, hàm `sumSeries()` sẽ tính tổng 3 thông số
 là memory-buffer, cached và used, hiển thị tên biểu đồ với tên là `USED`
 
 
@@ -83,8 +81,8 @@ Mục 1 và 2 cách các thông số vẫn giống vẫn kiểu Pie Chart ( chú
 
 Mục 3: **Axes**
 
-<ul>Mục này để điều chỉnh các thông số ở trục X và Y</ul>
-<ul>Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái.</ul>
+- Mục này để điều chỉnh các thông số ở trục X và Y
+- Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái
 
 Mục 4: **Legend**
  - Mục này để tùy chỉnh các thông số liên quan đến `lengend`
@@ -95,13 +93,12 @@ Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phan s
 
 ####1.3 Singlestat
 
-Mục 1 và 2 các thống số vẫn giống với các kiểu biểu đồ khác 
+ - Mục 1 và 2 các thống số vẫn giống với các kiểu biểu đồ khác 
 
-Mục 3, thống số ta lấy ở đây là `System Uptime` nên đơn vị sẽ là `second(s)`
+ - Mục 3, thống số ta lấy ở đây là `System Uptime` nên đơn vị sẽ là `second(s)`
 
 Tùy chọn thêm `Colonng` nếu muốn đặt ngưỡng cho các thông số này.
 
-Dashboard hoàn chỉnh : 
+Ví dụ Dashboard hoàn chỉnh : 
 
-![graphite](/images/Gra17.png)
 ![graphite](/images/Gra17.png)
