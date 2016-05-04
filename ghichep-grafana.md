@@ -5,7 +5,8 @@
 	*	[2.2	Graph](#graph)
 	*	[2.3	Singlestat](#single)
 	
-<a name="model"> </a> ###1. Mô hình logic Grafana kết hợp Graphite và Collectd
+<a name="model"> </a> 
+###1. Mô hình logic Grafana kết hợp Graphite và Collectd
 <img src="http://i.imgur.com/5GWXWLB.png">
 
 <a name="dashboard"> </a> ###2. Hướng dẫn tạo Dashboard giám sát các host trên Grafana 3.0
@@ -33,7 +34,8 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 
  - 2.3 Singlestat : Thể hiện 1 số liệu cụ thể như System Uptime, RAM, Disk Total
 
-<a name="pie"> </a> ####2.1 Pie Chart
+<a name="pie"> </a> 
+####2.1 Pie Chart
 ![graphite](/images/Gra6.png)
 
 Mục 1 : **Gerenal**
@@ -72,7 +74,8 @@ Cách lấy tên đầy đủ cho thống số ở mục 4:
 
 Chọn đơn vị hiển thị là `byte` và legend name hiển thị trên graph
 
-<a name="graph"> </a> ####2.2 Graph
+<a name="graph"> </a> 
+####2.2 Graph
 ![graphite](/images/Gra12.png)
 
 Mục 1 và 2 cách các thông số vẫn giống vẫn kiểu Pie Chart ( chú ý chọn thông số phù hợp với dạng biểu đồ Graph)
@@ -89,7 +92,8 @@ Mục 4: **Legend**
 
 Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phân sau dấu ","
 
-<a name="single"> </a> ####2.3 Singlestat
+<a name="single"> </a> 
+####2.3 Singlestat
 ![graphite](/images/Gra16.png)
  - Mục 1 và 2 các thống số vẫn giống với các kiểu biểu đồ khác 
 
