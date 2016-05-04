@@ -42,18 +42,18 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 
 Mục 1 : **Gerenal**
 
-<ul>1: Title của biểu đồ</ul>
-<ul>2: Kích thước chiều ngang của biểu đồ</ul>
-<ul>3: Kích thước chiều dài của biểu đồ</ul>
-<ul>4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác</ul>
+ - 1: Title của biểu đồ</ul>
+ - 2: Kích thước chiều ngang của biểu đồ
+ - 3: Kích thước chiều dài của biểu đồ
+ - 4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác
 
 ![graphite](/images/Gra8.png)
 
 Mục 2: **Metrics**
 
-<ul>1: Chọn host</ul>
-<ul>2,3 : Chọn thông số muốn hiển thị của host</ul>
-<ul>4: Dùng function alias để đặt tên khác ở ô 5</ul>
+ - 1: Chọn host
+ - 2,3 : Chọn thông số muốn hiển thị của host
+ - 4: Dùng function alias để đặt tên khác ở ô 5
 
 ![graphite](/images/Gra9.png)
 
