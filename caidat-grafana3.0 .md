@@ -89,10 +89,10 @@ Mục 4: **Legend**
  
  - Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged
 
-Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phan sau dấu ","
+Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phân sau dấu ","
 
 ####1.3 Singlestat
-
+![graphite](/images/Gra16.png)
  - Mục 1 và 2 các thống số vẫn giống với các kiểu biểu đồ khác 
 
  - Mục 3, thống số ta lấy ở đây là `System Uptime` nên đơn vị sẽ là `second(s)`
