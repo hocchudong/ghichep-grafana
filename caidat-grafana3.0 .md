@@ -42,13 +42,10 @@ Trong bài sẽ hướng dẫn tạo 3 biểu đồ thông dụng:
 
 Mục 1 : **Gerenal**
 
-1: Title của biểu đồ
-
-2: Kích thước chiều ngang của biểu đồ
-
-3: Kích thước chiều dài của biểu đồ
-
-4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác
+<ul>1: Title của biểu đồ</ul>
+<ul>2: Kích thước chiều ngang của biểu đồ</ul>
+<ul>3: Kích thước chiều dài của biểu đồ</ul>
+<ul>4: Thêm thông tin nếu muốn link tới một Dashboard hoăc URL khác</ul>
 
 ![graphite](/images/Gra8.png)
 
