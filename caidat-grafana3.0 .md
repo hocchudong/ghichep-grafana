@@ -47,7 +47,7 @@ Mục 2: **Metrics**
 
 <ul>1: Chọn host</ul>
 <ul>2,3 : Chọn thông số muốn hiển thị của host</ul>
-<ul>4: Dùng function `alias` để đặt tên khác ở ô 5</ul>
+<ul>4: Dùng function alias để đặt tên khác ở ô 5</ul>
 
 ![graphite](/images/Gra9.png)
 
@@ -64,3 +64,35 @@ là memory-buffer, cached và used, hiển thị tên biểu đồ với tên l�
 Cách lấy tên đầy đủ cho thống số ở mục 4:
 ```
 ![graphite](/images/Gra7.png)
+![graphite](/images/Gra11.png)
+
+Chọn đơn vị hiển thị là `byte` và legend name hiển thị trên graph
+
+####1.2 Graph
+![graphite](/images/Gra12.png)
+
+Mục 1 và 2 cách các thông số vẫn giống vẫn kiểu Pie Chart ( chú ý chọn thông số phù hợp với dạng biểu đồ Graph)
+
+Mục 3: **Axes**
+```sh
+Mục này để điều chỉnh các thông số ở trục X và Y
+Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái.
+```
+Mục 4: **Legend**
+```sh
+Mục này để tùy chỉnh các thông số liên quan đến `lengend`
+Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged
+Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phan sau dấu ","
+```
+####1.3 Singlestat
+
+Mục 1 và 2 các thống số vẫn giống với các kiểu biểu đồ khác 
+
+Mục 3, thống số ta lấy ở đây là `System Uptime` nên đơn vị sẽ là `second(s)`
+
+Tùy chọn thêm `Colonng` nếu muốn đặt ngưỡng cho các thông số này.
+
+Dashboard hoàn chỉnh : 
+
+![graphite](/images/Gra17.png)
+![graphite](/images/Gra17.png)
