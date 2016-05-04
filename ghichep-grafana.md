@@ -4,6 +4,7 @@
 	*	[2.1.	Pie Chart](#pie)
 	*	[2.2	Graph](#graph)
 	*	[2.3	Singlestat](#single)
+	
 <a name="model"> </a> ###1. Mô hình logic Grafana kết hợp Graphite và Collectd
 <img src="http://i.imgur.com/5GWXWLB.png">
 
