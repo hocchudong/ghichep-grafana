@@ -87,8 +87,9 @@ Mục 3: **Axes**
 <ul>Ta chọn đơn vị hiển thị là của Network Traffic là kilobits/sec, ở trục Y bên trái.</ul>
 
 Mục 4: **Legend**
-<ul>Mục này để tùy chỉnh các thông số liên quan đến `lengend`</ul>
-<ul>Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged</ul>
+ - Mục này để tùy chỉnh các thông số liên quan đến `lengend`
+ 
+ - Ta có thể chọn các kiểu hiển thị của `legend` cũng như các giá trị của lenged
 
 Chọn Decimals = 2 để các giá trị chỉ lấy 2 đơn vị thập phan sau dấu ","
 
