@@ -4,6 +4,7 @@
 	*	[2.1.	Pie Chart](#pie)
 	*	[2.2	Graph](#graph)
 	*	[2.3	Singlestat](#single)
+*	[3. Reset admin password](#password)
 	
 <a name="model"> </a> 
 ###1. Mô hình logic Grafana kết hợp Graphite và Collectd
@@ -105,3 +106,18 @@ Tùy chọn thêm `Colonng` nếu muốn đặt ngưỡng cho các thông số n
 Ví dụ Dashboard hoàn chỉnh : 
 
 ![graphite](/images/Gra17.png)
+<a name="password"> </a>
+###3. Reset admin password
+Cài đặt database sqlite cho Grafana
+```sh
+sudo apt-get update
+sudo apt-get install sqlite3 libsqlite3-dev
+```
+Cú pháp reset password admin
+```sh
+sudo sqlite3 /var/lib/grafana/grafana.db
+
+sqlite> update user set password = '59acf18b94d7eb0694c61e60ce44c110c7a683ac6a8f09580d626f90f4a242000746579358d77dd9e570e83fa24faa88a8a6', salt = 'F3FAxVm33R' where login = 'admin';
+sqlite> .exit
+```
+Lúc này password của user admin đăng nhập trên dashboard sẽ trở lại mặc định là `admin`
